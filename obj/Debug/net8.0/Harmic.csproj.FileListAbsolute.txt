@@ -560,3 +560,4 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Dra
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\Harmic.sourcelink.json
