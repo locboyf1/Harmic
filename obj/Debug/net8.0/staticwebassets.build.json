@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AG8GoF94SRA59vqLUZ1+AAoz1rmhmKFA10ECiqolZCA=",
+  "Hash": "6UmnqYhoQdfvLQCTfHMuDIlqmjW0Adl0XJys5bN96ls=",
   "Source": "Harmic",
   "BasePath": "_content/Harmic",
   "Mode": "Default",
@@ -39934,6 +39934,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\medium-size\\1-1-370x315.jpg"
+    },
+    {
+      "Identity": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-2-224x204.jpg",
+      "SourceId": "Harmic",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\",
+      "BasePath": "_content/Harmic",
+      "RelativePath": "assets/images/blog/medium-size/1-2-224x204.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\medium-size\\1-2-224x204.jpg"
     },
     {
       "Identity": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-2-370x315.jpg",
