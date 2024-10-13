@@ -19,6 +19,7 @@ namespace Harmic.Controllers
         {
             ViewBag.productCategories = _context.TbProductCategories.ToList();
             ViewBag.productNew = _context.TbProducts.Where(m => m.IsNew).ToList();
+            ViewBag.commentBlogs = _context.TbBlogComments.ToList();
 
             return View();
         }
