@@ -15762,7 +15762,7 @@ img {
 }
 
 .countdown-wrap.with-dark-border .countdown__time:before {
-  content: url("../images/shape/2.png");
+    content: url("~/assets/images/shape/1.png");
 }
 
 .countdown-wrap.with-secondary-border .countdown__item {
@@ -15774,7 +15774,7 @@ img {
 }
 
 .countdown-wrap.with-secondary-border .countdown__time:before {
-  content: url("../images/shape/2.png");
+  content: url("~/assets/images/shape/2.png");
 }
 
 .countdown__item {
@@ -15808,7 +15808,7 @@ img {
 }
 
 .countdown__time:before {
-  content: url("../images/shape/1.png");
+  content: url("~/assets/images/shape/1.png");
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -16080,7 +16080,7 @@ blockquote .inner-content {
 }
 
 blockquote .inner-content:before {
-  content: url("../images/blog/blockquote/quotation.png");
+  content: url("~/assets/images/blog/blockquote/quotation.png");
   position: absolute;
   top: 0;
   left: 0;

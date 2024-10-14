@@ -1,6 +1,7 @@
 ﻿@{
     List<TbProductCategory> productCategories = ViewBag.productCategories;
     List<TbProduct> productNew = ViewBag.productNew;
+
 }
        <!-- Begin Slider Area -->
 <div class="slider-area">
@@ -1634,11 +1635,11 @@
                 <div class="swiper-container product-slider swiper-arrow with-radius border-issue">
                     <div class="swiper-wrapper">
                         @foreach(var item in productNew.Take(3))
-    {
+                        {   string sURL=$"/product/{item.Alias}-{item.ProductId}.html";  
                             <div class="swiper-slide">
                                 <div class="product-item">
                                     <div class="product-img img-zoom-effect">
-                                        <a href="@item.Alias">
+                                        <a href=@sURL>
                                             <img class="img-full" src="~/assets/images/product/medium-size/@item.Image" alt="Product Images">
                                         </a>
                                         <div class="product-add-action">
@@ -1662,9 +1663,17 @@
                                         </div>
                                     </div>
                                     <div class="product-content">
-                                        <a class="product-name" href="single-product.html">@item.Title</a>
+                                        <a class="product-name" href="@sURL">@item.Title</a>
                                         <div class="price-box pb-1">
-                                            <span class="new-price">@item.Price</span>
+                                            @if (item.PriceSale == 0)
+                                            {
+                                                <span class="new-price text-primary">@item.Price</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="new-price text-danger">@item.PriceSale</span>
+                                                <span class="old-price text-primary">@item.Price</span>
+                                            }
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1752,17 +1761,27 @@
                     <div class="swiper-wrapper">
                         @foreach(var item in productNew)
 {
+                            string sURL = $"/product/{item.Alias}-{item.ProductId}.html";
                         <div class="swiper-slide">
                             <div class="product-list-item">
                                 <div class="product-img img-zoom-effect">
-                                    <a href="@item.Alias">
+                                    <a href="@sURL">
                                         <img class="img-full" src="~/assets/images/product/medium-size/@item.Image" alt="Product Images">
                                     </a>
                                 </div>
                                 <div class="product-content">
-                                    <a class="product-name" href="single-product.html">@item.Title</a>
+                                    <a class="product-name" href="@sURL">@item.Title</a>
                                     <div class="price-box pb-1">
-                                        <span class="new-price">@item.Price</span>
+                                 
+                                            @if (item.PriceSale == 0)
+                                            {
+                                                <span class="new-price text-primary">@item.Price</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="new-price text-danger">@item.PriceSale</span>
+                                                <span class="old-price text-primary">@item.Price</span>
+                                            }
                                     </div>
                                     <div class="rating-box-wrap">
                                         <div class="rating-box">
