@@ -38064,8 +38064,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6rjuno10p4</Fingerprint>
-      <Integrity>gqZqfeVqTgIMabp0D4grCEAIvK23V7QN6lgSJJg+jAA=</Integrity>
+      <Fingerprint>9vqtzrd8y2</Fingerprint>
+      <Integrity>RUzF3iFcsQFCbH+bk4kzfFbBZ/78Mld+HlvAFJiO2pU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\breadcrumb\bg\1-1-1920x373.jpg'))</OriginalItemSpec>

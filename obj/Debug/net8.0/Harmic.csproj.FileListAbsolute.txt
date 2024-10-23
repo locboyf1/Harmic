@@ -94,7 +94,6 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebSocke
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.CSharp.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
@@ -106,8 +105,6 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configur
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.Abstractions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
@@ -125,11 +122,9 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Stores.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Configuration.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Console.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Debug.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventLog.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventSource.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
@@ -278,7 +273,6 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Encoding.CodePage
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Encoding.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Encoding.Extensions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Encodings.Web.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Json.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.RegularExpressions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Threading.Channels.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Threading.dll
@@ -564,3 +558,10 @@ D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\Harmic.sourcelink.json
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Harmic.staticwebassets.endpoints.json
 D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\staticwebassets\msbuild.Harmic.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\System.Text.Json.dll

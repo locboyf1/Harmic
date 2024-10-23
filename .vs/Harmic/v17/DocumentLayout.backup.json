@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\VisualStudio\\UDWeb\\Harmic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\views\\shared\\components\\product\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:views\\shared\\components\\product\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\viewcomponents\\productviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:viewcomponents\\productviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,41 +63,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAwwJ4AAABYAAAAAAAAAA==",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Delete.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Delete.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAD8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T04:01:11.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductViewComponent.cs",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\ViewComponents\\ProductViewComponent.cs",
-              "RelativeDocumentMoniker": "ViewComponents\\ProductViewComponent.cs",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\ViewComponents\\ProductViewComponent.cs",
-              "RelativeToolTip": "ViewComponents\\ProductViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T09:53:37.238Z",
+              "WhenOpened": "2024-11-02T03:30:02.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\Product\\Default.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\Product\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T04:00:45.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T04:02:35.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T02:27:34.104Z"
             }
           ]
         }
