@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\VisualStudio\\UDWeb\\Harmic\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,43 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Delete.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Delete.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Delete.cshtml",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAAD8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T03:30:02.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T04:02:35.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T02:27:34.104Z"
             }
           ]
         }
