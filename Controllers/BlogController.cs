@@ -25,14 +25,13 @@ namespace Harmic.Controllers
                 return NotFound();
             }
 
-            var blog = await _context.TbBlogs.FirstOrDefaultAsync(m => m.BlogId == id);
+            var blog = await _context.TbBlogs.Include(m => m.TbBlogComments).Where(m=>m.BlogId == id).FirstOrDefaultAsync(m => m.BlogId == id);
 
             if (blog == null)
             {
                 return NotFound();
             };
 
-            ViewBag.BlogComment = _context.TbBlogComments.Where(i => i.BlogId == id).ToList();
             return View(blog);
         }
 
