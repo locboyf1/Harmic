@@ -16,14 +16,14 @@
 						<div class="chilly">
 							<div class="scene fill">
 								<div class="expand-width" data-depth="0.2">
-									<img src="~/assets/images/slider/inner-img/1-1-231x210.png" alt="Inner Image">
+									<img src="/assets/images/slider/inner-img/1-1-231x210.png" alt="Inner Image">
 								</div>
 							</div>
 						</div>
 						<div class="avocado">
 							<div class="scene fill">
 								<div class="expand-width" data-depth="0.5">
-									<img src="~/assets/images/slider/inner-img/1-2-224x204.png" alt="Inner Image">
+									<img src="/assets/images/slider/inner-img/1-2-224x204.png" alt="Inner Image">
 								</div>
 							</div>
 						</div>
@@ -41,7 +41,7 @@
 								<div class="tomatoes">
 									<div class="scene fill">
 										<div class="expand-width" data-depth="0.5">
-											<img src="~/assets/images/slider/inner-img/1-3-601x534.png" alt="Inner Image">
+											<img src="/assets/images/slider/inner-img/1-3-601x534.png" alt="Inner Image">
 										</div>
 									</div>
 								</div>
@@ -51,19 +51,19 @@
 				</div>
 			</div>
 			<div class="swiper-slide animation-style-01">
-				<div class="slide-inner bg-height" data-bg-image="~/assets/images/slider/bg/1-1.jpg">
+				<div class="slide-inner bg-height" data-bg-image="/assets/images/slider/bg/1-1.jpg">
 					<div class="parallax-img-wrap">
 						<div class="chilly">
 							<div class="scene fill">
 								<div class="expand-width" data-depth="0.2">
-									<img src="~/assets/images/slider/inner-img/1-1-231x210.png" alt="Inner Image">
+									<img src="/assets/images/slider/inner-img/1-1-231x210.png" alt="Inner Image">
 								</div>
 							</div>
 						</div>
 						<div class="avocado">
 							<div class="scene fill">
 								<div class="expand-width" data-depth="0.5">
-									<img src="~/assets/images/slider/inner-img/1-2-224x204.png" alt="Inner Image">
+									<img src="/assets/images/slider/inner-img/1-2-224x204.png" alt="Inner Image">
 								</div>
 							</div>
 						</div>
@@ -81,7 +81,7 @@
 								<div class="tomatoes">
 									<div class="scene fill">
 										<div class="expand-width" data-depth="0.5">
-											<img src="~/assets/images/slider/inner-img/2-1-601x426.png" alt="Inner Image">
+											<img src="/assets/images/slider/inner-img/2-1-601x426.png" alt="Inner Image">
 										</div>
 									</div>
 								</div>
@@ -108,7 +108,7 @@
 			<div class="col-lg-4 col-md-6">
 				<div class="shipping-item">
 					<div class="shipping-img">
-						<img src="~/assets/images/shipping/icon/plane.png" alt="Shipping Icon">
+						<img src="/assets/images/shipping/icon/plane.png" alt="Shipping Icon">
 					</div>
 					<div class="shipping-content">
 						<h5 class="title">Free Shipping</h5>
@@ -119,7 +119,7 @@
 			<div class="col-lg-4 col-md-6 pt-6 pt-md-0">
 				<div class="shipping-item">
 					<div class="shipping-img">
-						<img src="~/assets/images/shipping/icon/earphones.png" alt="Shipping Icon">
+						<img src="/assets/images/shipping/icon/earphones.png" alt="Shipping Icon">
 					</div>
 					<div class="shipping-content">
 						<h5 class="title">Online Support</h5>
@@ -130,7 +130,7 @@
 			<div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
 				<div class="shipping-item">
 					<div class="shipping-img">
-						<img src="~/assets/images/shipping/icon/shield.png" alt="Shipping Icon">
+						<img src="/assets/images/shipping/icon/shield.png" alt="Shipping Icon">
 					</div>
 					<div class="shipping-content">
 						<h5 class="title">Secure Payment</h5>
@@ -151,9 +151,9 @@
 					<li class="nav-item" role="presentation">
 						<a class="active" id="all-items-tab" data-bs-toggle="tab" href="#all-items" role="tab" aria-controls="all-items" aria-selected="true">
 							<div class="product-tab-icon">
-								<img src="~/assets/images/product/icon/1.png" alt="Product Icon">
+								<img src="/files/CategoryProduct/1.png" alt="Product Icon">
 							</div>
-							All Items
+							Tất cả
 						</a>
 					</li>
 					@foreach (var item in productCategories.Where(m => (bool)m.IsActive).OrderBy(m => m.Position))
@@ -161,7 +161,7 @@
 						<li class="nav-item" role="presentation">
 							<a id="@item.Alias-tab" data-bs-toggle="tab" href="#@item.Alias" role="tab" aria-controls="@item.Alias" aria-selected="false" >
 								<div class="product-tab-icon">
-									<img src="~/assets/images/product/icon/@item.Icon" alt="Product Icon">
+									<img src="/files/CategoryProduct/@item.Icon" alt="Product Icon">
 								</div>
 								@item.Title
 							</a>
@@ -260,7 +260,7 @@
 								<div class="product-item">
 									<div class="product-img img-zoom-effect">
 										<a href=@sURL>
-											<img class="img-full" src="~/assets/images/product/medium-size/@item.Image" alt="Product Images">
+											<img class="img-full" src="/files/Products/@item.Image" alt="Product Images">
 										</a>
 										<div class="product-add-action">
 											<ul>
@@ -321,7 +321,7 @@
 </div>
 <!-- Product Area End Here -->
 <!-- Begin Banner Area -->
-<div class="banner-area banner-with-parallax py-10" data-bg-image="~/assets/images/banner/2-1-1920x523.jpg">
+<div class="banner-area banner-with-parallax py-10" data-bg-image="/assets/images/banner/2-1-1920x523.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -329,7 +329,7 @@
 					<div class="papaya">
 						<div class="scene fill">
 							<div class="expand-width" data-depth="0.2">
-								<img src="~/assets/images/banner/inner-img/2-1-503x430.png" alt="Banner Images">
+								<img src="/assets/images/banner/inner-img/2-1-503x430.png" alt="Banner Images">
 							</div>
 						</div>
 					</div>
@@ -388,7 +388,7 @@
 								<div class="product-list-item">
 									<div class="product-img img-zoom-effect">
 										<a href="@sURL">
-											<img class="img-full" src="~/assets/images/product/medium-size/@item.Image" alt="Product Images">
+											<img class="img-full" src="/files/Products/@item.Image" alt="Product Images">
 										</a>
 									</div>
 									<div class="product-content">

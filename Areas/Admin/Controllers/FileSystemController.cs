@@ -7,7 +7,7 @@ using System.Text.Json;
 namespace Harmic.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Route("/Admin/el-finder-file-system/")]
+    [Route("/Admin/el-finder-file-system")]
     public class FileSystemController : Controller
     {
         IWebHostEnvironment _env;

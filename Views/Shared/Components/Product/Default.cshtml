@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Harmic.Models.TbProduct>
 @if(ViewBag.CategoryID.ToString() == "All")
 {
-	foreach (var item in Model)
+	foreach (var item in Model.Take(8))
 	{
 		string sURL = $"/product/{item.Alias}-{item.ProductId}.html";
 		<div class="col-xl-3 col-lg-4 col-sm-6">
 			<div class="product-item">
 				<div class="product-img img-zoom-effect">
 					<a href="@sURL">
-						<img class="img-full" src="/assets/images/product/medium-size/@item.Image" alt="Product Images">
+						<img class="img-full" src="/files/Products/@item.Image" alt="Product Images">
 					</a>
 					<div class="product-add-action">
 						<ul>

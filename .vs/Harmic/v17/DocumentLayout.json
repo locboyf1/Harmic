@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\VisualStudio\\UDWeb\\Harmic\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\shared\\_summernote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\shared\\_summernote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\filemanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\controllers\\filesystemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\controllers\\filesystemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\controllers\\filemanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\controllers\\filemanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,10 +31,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Bookmark",
@@ -66,53 +62,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEgDAAAAAAAAAAAAAEgDAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYDAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:53:54.082Z",
+              "WhenOpened": "2024-11-24T07:14:03.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\FileManager\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\FileManager\\Index.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\FileManager\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\FileManager\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "_SummerNote.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_SummerNote.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_SummerNote.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_SummerNote.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_SummerNote.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAKQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T13:38:21.384Z",
+              "WhenOpened": "2024-11-24T07:07:20.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FileManagerController.cs",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\FileManagerController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FileManagerController.cs",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\FileManagerController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\FileManagerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:35:36.655Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\FileManager\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\FileManager\\Index.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\FileManager\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\FileManager\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T06:53:04.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FileSystemController.cs",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\FileSystemController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FileSystemController.cs",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\FileSystemController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\FileSystemController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:25:29.543Z"
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T06:47:52.496Z",
+              "EditorCaption": ""
             }
           ]
         }

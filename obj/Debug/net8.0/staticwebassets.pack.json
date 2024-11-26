@@ -11965,38 +11965,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\blog\\large-size\\1-1-870x500.jpg"
     },
     {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-1-370x315.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\1-1-370x315.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-2-224x204.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\1-2-224x204.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-2-370x315.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\1-2-370x315.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\1-3-370x315.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\1-3-370x315.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\2-1-570x485.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\2-1-570x485.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\2-2-570x485.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\2-2-570x485.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\2-3-570x485.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\2-3-570x485.jpg"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\medium-size\\2-4-570x485.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\medium-size\\2-4-570x485.jpg"
-    },
-    {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\blog\\small-size\\1-1-86x86.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\blog\\small-size\\1-1-86x86.jpg"
     },
@@ -12067,26 +12035,6 @@
     {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\payment\\1.png",
       "PackagePath": "staticwebassets\\assets\\images\\payment\\1.png"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\icon\\1.png",
-      "PackagePath": "staticwebassets\\assets\\images\\product\\icon\\1.png"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\icon\\2.png",
-      "PackagePath": "staticwebassets\\assets\\images\\product\\icon\\2.png"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\icon\\3.png",
-      "PackagePath": "staticwebassets\\assets\\images\\product\\icon\\3.png"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\icon\\4.png",
-      "PackagePath": "staticwebassets\\assets\\images\\product\\icon\\4.png"
-    },
-    {
-      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\icon\\5.png",
-      "PackagePath": "staticwebassets\\assets\\images\\product\\icon\\5.png"
     },
     {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\images\\product\\large-size\\2-1-555x645.jpg",
@@ -12755,6 +12703,130 @@
     {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\scss\\style.scss",
       "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\1-1-370x315.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\1-1-370x315.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\1-2-224x204.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\1-2-224x204.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\1-2-370x315.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\1-2-370x315.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\1-3-370x315.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\1-3-370x315.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\2-1-570x485.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\2-1-570x485.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\2-2-570x485.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\2-2-570x485.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\2-3-570x485.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\2-3-570x485.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\2-4-570x485.jpg",
+      "PackagePath": "staticwebassets\\files\\Blogs\\2-4-570x485.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\1.png",
+      "PackagePath": "staticwebassets\\files\\CategoryProduct\\1.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\2.png",
+      "PackagePath": "staticwebassets\\files\\CategoryProduct\\2.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\3.png",
+      "PackagePath": "staticwebassets\\files\\CategoryProduct\\3.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\4.png",
+      "PackagePath": "staticwebassets\\files\\CategoryProduct\\4.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\5.png",
+      "PackagePath": "staticwebassets\\files\\CategoryProduct\\5.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-1-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-1-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-1-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-1-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-10-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-10-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-11-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-11-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-12-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-12-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-2-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-2-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-2-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-2-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-3-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-3-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-3-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-3-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-4-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-4-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-4-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-4-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-5-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-5-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-5-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-5-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-6-112x124.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-6-112x124.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-6-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-6-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-7-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-7-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-8-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-8-270x300.jpg"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-9-270x300.jpg",
+      "PackagePath": "staticwebassets\\files\\Products\\1-9-270x300.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Harmic.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
