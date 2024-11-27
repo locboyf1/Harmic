@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Harmic.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +12,19 @@ namespace Harmic.Controllers
         {
             _context = context;
         }
+=======
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace CarRental.Controllers
+{
+    public class ContactController : Controller
+    {
+>>>>>>> e65970a8c5da85161122fc0bdbc0681f49337f2d
         public IActionResult Index()
         {
             return View();
         }
+<<<<<<< HEAD
 
         [HttpPost]
         public IActionResult Create(string name, string phone, string email, string message)
@@ -36,5 +46,7 @@ namespace Harmic.Controllers
                 return Json(new { status = false });
             }
         }
+=======
+>>>>>>> e65970a8c5da85161122fc0bdbc0681f49337f2d
     }
 }
