@@ -12705,6 +12705,22 @@
       "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
     },
     {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\toastr\\toastr.css",
+      "PackagePath": "staticwebassets\\assets\\toastr\\toastr.css"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\toastr\\toastr.js.map",
+      "PackagePath": "staticwebassets\\assets\\toastr\\toastr.js.map"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\toastr\\toastr.min.css",
+      "PackagePath": "staticwebassets\\assets\\toastr\\toastr.min.css"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\assets\\toastr\\toastr.min.js",
+      "PackagePath": "staticwebassets\\assets\\toastr\\toastr.min.js"
+    },
+    {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Blogs\\1-1-370x315.jpg",
       "PackagePath": "staticwebassets\\files\\Blogs\\1-1-370x315.jpg"
     },
@@ -12755,6 +12771,10 @@
     {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\CategoryProduct\\5.png",
       "PackagePath": "staticwebassets\\files\\CategoryProduct\\5.png"
+    },
+    {
+      "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\00db00dbca81e3c5c95aba76bad028cded6e75393548deb1affdb5816930fc7a.png",
+      "PackagePath": "staticwebassets\\files\\Products\\00db00dbca81e3c5c95aba76bad028cded6e75393548deb1affdb5816930fc7a.png"
     },
     {
       "Id": "D:\\VisualStudio\\UDWeb\\Harmic\\wwwroot\\files\\Products\\1-1-112x124.jpg",
