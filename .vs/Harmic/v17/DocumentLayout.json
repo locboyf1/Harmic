@@ -66,8 +66,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAAAowB4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T04:07:30.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T04:07:30.332Z"
             },
             {
               "$type": "Document",
@@ -77,7 +76,7 @@
               "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
               "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Views\\Contact\\Index.cshtml",
               "RelativeToolTip": "Views\\Contact\\Index.cshtml",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAE0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-27T03:58:09.649Z",
               "EditorCaption": ""
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Controllers\\ContactController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAACMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T03:33:18.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T03:33:18.955Z"
             }
           ]
         }
