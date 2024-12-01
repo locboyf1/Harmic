@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Harmic.Utilities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,34 +22,48 @@ namespace Harmic.Areas.Admin.Controllers
         // GET: Admin/Products
         public async Task<IActionResult> Index()
         {
-            var harmicContext = _context.TbProducts.Include(t => t.CategoryProduct);
-            return View(await harmicContext.ToListAsync());
+            if (Function.isLogin())
+            {
+                var harmicContext = _context.TbProducts.Include(t => t.CategoryProduct);
+                return View(await harmicContext.ToListAsync());
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbProduct = await _context.TbProducts
-                .Include(t => t.CategoryProduct)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
-            if (tbProduct == null)
-            {
-                return NotFound();
-            }
+                var tbProduct = await _context.TbProducts
+                    .Include(t => t.CategoryProduct)
+                    .FirstOrDefaultAsync(m => m.ProductId == id);
+                if (tbProduct == null)
+                {
+                    return NotFound();
+                }
 
-            return View(tbProduct);
+                return View(tbProduct);
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Products/Create
         public IActionResult Create()
         {
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "Title");
-            return View();
+            if (Function.isLogin())
+            {
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "Title");
+                return View();
+            }
+            return RedirectToAction("Index", "Login");
         }
 
         // POST: Admin/Products/Create
@@ -59,32 +73,41 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductId,Title,Alias,CategoryProductId,Description,Detail,Image,Price,PriceSale,Quantity,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsNew,IsBestSeller,UnitInStock,IsActive,Star")] TbProduct tbProduct)
         {
-            if (ModelState.IsValid)
+            if (Function.isLogin())
             {
-                tbProduct.Alias = Harmic.Utilities.Function.TitleToAlias(tbProduct.Title);
-                _context.Add(tbProduct);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    tbProduct.Alias = Harmic.Utilities.Function.TitleToAlias(tbProduct.Title);
+                    _context.Add(tbProduct);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                return View(tbProduct);
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
-            return View(tbProduct);
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbProduct = await _context.TbProducts.FindAsync(id);
-            if (tbProduct == null)
-            {
-                return NotFound();
+                var tbProduct = await _context.TbProducts.FindAsync(id);
+                if (tbProduct == null)
+                {
+                    return NotFound();
+                }
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                return View(tbProduct);
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
-            return View(tbProduct);
+            return RedirectToAction("Index", "Login");
         }
 
         // POST: Admin/Products/Edit/5
@@ -94,52 +117,62 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProductId,Title,Alias,CategoryProductId,Description,Detail,Image,Price,PriceSale,Quantity,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsNew,IsBestSeller,UnitInStock,IsActive,Star")] TbProduct tbProduct)
         {
-            if (id != tbProduct.ProductId)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id != tbProduct.ProductId)
+                {
+                    return NotFound();
+                }
 
-            if (ModelState.IsValid)
-            {
-                try
+                if (ModelState.IsValid)
                 {
-                    _context.Update(tbProduct);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TbProductExists(tbProduct.ProductId))
+                    try
                     {
-                        return NotFound();
+                        _context.Update(tbProduct);
+                        await _context.SaveChangesAsync();
                     }
-                    else
+                    catch (DbUpdateConcurrencyException)
                     {
-                        throw;
+                        if (!TbProductExists(tbProduct.ProductId))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
                     }
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                return View(tbProduct);
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
-            return View(tbProduct);
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbProduct = await _context.TbProducts
-                .Include(t => t.CategoryProduct)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
-            if (tbProduct == null)
-            {
-                return NotFound();
-            }
+                var tbProduct = await _context.TbProducts
+                    .Include(t => t.CategoryProduct)
+                    .FirstOrDefaultAsync(m => m.ProductId == id);
+                if (tbProduct == null)
+                {
+                    return NotFound();
+                }
 
-            return View(tbProduct);
+                return View(tbProduct);
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         // POST: Admin/Products/Delete/5
@@ -147,14 +180,18 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var tbProduct = await _context.TbProducts.FindAsync(id);
-            if (tbProduct != null)
+            if (Function.isLogin())
             {
-                _context.TbProducts.Remove(tbProduct);
-            }
+                var tbProduct = await _context.TbProducts.FindAsync(id);
+                if (tbProduct != null)
+                {
+                    _context.TbProducts.Remove(tbProduct);
+                }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction("Index", "Login");
         }
 
         private bool TbProductExists(int id)

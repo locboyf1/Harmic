@@ -57162,8 +57162,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7znil99lx5</Fingerprint>
-      <Integrity>He3QEBKoL/nMXlVsoM7S2C2kjFQqS5L+mgA+F8LpG+U=</Integrity>
+      <Fingerprint>xk3qo5andv</Fingerprint>
+      <Integrity>X7+pM8lU9VGHQLKWtMM5cRBOApFzVgQviIaQsFK7/aQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\toastr\toastr.css'))</OriginalItemSpec>
@@ -57216,8 +57216,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uhmk5snb2d</Fingerprint>
-      <Integrity>Hgwq1OBpJ276HUP9H3VJkSv9ZCGRGQN+JldPJ8pNcUM=</Integrity>
+      <Fingerprint>t2jsbw6zax</Fingerprint>
+      <Integrity>ldqN9/OcVFZtetwyZMvgDHiiWga1hRgUiY2ML1BBLF0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\toastr\toastr.min.js'))</OriginalItemSpec>

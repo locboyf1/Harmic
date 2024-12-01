@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Harmic.Utilities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,31 +22,44 @@ namespace Harmic.Areas.Admin.Controllers
         // GET: Admin/Menus
         public async Task<IActionResult> Index()
         {
-            return View(await _context.TbMenus.ToListAsync());
+            if (Function.isLogin())
+            {
+                return View(await _context.TbMenus.ToListAsync());
+            }
+            return RedirectToAction("Index", "Login");
         }
 
         // GET: Admin/Menus/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbMenu = await _context.TbMenus
-                .FirstOrDefaultAsync(m => m.MenuId == id);
-            if (tbMenu == null)
-            {
-                return NotFound();
-            }
+                var tbMenu = await _context.TbMenus
+                    .FirstOrDefaultAsync(m => m.MenuId == id);
+                if (tbMenu == null)
+                {
+                    return NotFound();
+                }
 
-            return View(tbMenu);
+                return View(tbMenu);
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Menus/Create
         public IActionResult Create()
         {
-            return View();
+            if (Function.isLogin())
+            {
+                return View();
+            }
+            return RedirectToAction("Index", "Login");
         }
 
         // POST: Admin/Menus/Create
@@ -56,30 +69,40 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
-            if (ModelState.IsValid)
+            if (Function.isLogin())
             {
-                tbMenu.Alias = Harmic.Utilities.Function.TitleToAlias(tbMenu.Title);
-                _context.Add(tbMenu);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    tbMenu.Alias = Harmic.Utilities.Function.TitleToAlias(tbMenu.Title);
+                    _context.Add(tbMenu);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(tbMenu);
             }
-            return View(tbMenu);
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Menus/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbMenu = await _context.TbMenus.FindAsync(id);
-            if (tbMenu == null)
-            {
-                return NotFound();
+                var tbMenu = await _context.TbMenus.FindAsync(id);
+                if (tbMenu == null)
+                {
+                    return NotFound();
+                }
+                return View(tbMenu);
             }
-            return View(tbMenu);
+            return RedirectToAction("Index", "Login");
+
         }
 
         // POST: Admin/Menus/Edit/5
@@ -89,50 +112,60 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
-            if (id != tbMenu.MenuId)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id != tbMenu.MenuId)
+                {
+                    return NotFound();
+                }
 
-            if (ModelState.IsValid)
-            {
-                try
+                if (ModelState.IsValid)
                 {
-                    _context.Update(tbMenu);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TbMenuExists(tbMenu.MenuId))
+                    try
                     {
-                        return NotFound();
+                        _context.Update(tbMenu);
+                        await _context.SaveChangesAsync();
                     }
-                    else
+                    catch (DbUpdateConcurrencyException)
                     {
-                        throw;
+                        if (!TbMenuExists(tbMenu.MenuId))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
                     }
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
+                return View(tbMenu);
             }
-            return View(tbMenu);
+            return RedirectToAction("Index", "Login");
+
         }
 
         // GET: Admin/Menus/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (Function.isLogin())
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var tbMenu = await _context.TbMenus
-                .FirstOrDefaultAsync(m => m.MenuId == id);
-            if (tbMenu == null)
-            {
-                return NotFound();
-            }
+                var tbMenu = await _context.TbMenus
+                    .FirstOrDefaultAsync(m => m.MenuId == id);
+                if (tbMenu == null)
+                {
+                    return NotFound();
+                }
 
-            return View(tbMenu);
+                return View(tbMenu);
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         // POST: Admin/Menus/Delete/5
@@ -140,14 +173,19 @@ namespace Harmic.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var tbMenu = await _context.TbMenus.FindAsync(id);
-            if (tbMenu != null)
+            if (Function.isLogin())
             {
-                _context.TbMenus.Remove(tbMenu);
-            }
+                var tbMenu = await _context.TbMenus.FindAsync(id);
+                if (tbMenu != null)
+                {
+                    _context.TbMenus.Remove(tbMenu);
+                }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction("Index", "Login");
+
         }
 
         private bool TbMenuExists(int id)
