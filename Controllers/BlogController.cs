@@ -35,6 +35,16 @@ namespace Harmic.Controllers
             return View(blog);
         }
 
+        [HttpPost]
+        public IActionResult Comment(TbBlogComment blogComment, string aliasblog)
+        {
+            blogComment.CreatedDate = DateTime.Now;
+            blogComment.IsActive = true;
+            _context.Add(blogComment);
+            _context.SaveChanges(); 
 
+            string url = $"/blog/{aliasblog}-{blogComment.BlogId}.html";
+            return Redirect(url);
+        }
     }
 }

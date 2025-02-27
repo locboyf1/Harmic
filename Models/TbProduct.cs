@@ -45,5 +45,7 @@ public partial class TbProduct
 
     public virtual TbProductCategory? CategoryProduct { get; set; }
 
+    public virtual ICollection<TbCart> TbCarts { get; set; } = new List<TbCart>();
+
     public virtual ICollection<TbProductReview> TbProductReviews { get; set; } = new List<TbProductReview>();
 }

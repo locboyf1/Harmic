@@ -13,7 +13,7 @@ namespace Harmic.Controllers
         {
             _context = context;
             _logger = logger;
-        }
+        } 
 
         public IActionResult Index()
         {

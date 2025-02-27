@@ -2081,6 +2081,19 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "RestSharp/112.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SixLabors.ImageSharp/3.1.5": {
         "type": "package",
         "compile": {
@@ -6468,6 +6481,31 @@
         "nuget.versioning.nuspec"
       ]
     },
+    "RestSharp/112.1.0": {
+      "sha512": "bOUGNZqhhv/QeCXHTKEUil846yBjwWXpzPKjO67kFvaAOoF361z7jLY5BMnuZ6WD2WQRA750sNMcK7MSPCQ5Mg==",
+      "type": "package",
+      "path": "restsharp/112.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net471/RestSharp.dll",
+        "lib/net471/RestSharp.xml",
+        "lib/net48/RestSharp.dll",
+        "lib/net48/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/net7.0/RestSharp.dll",
+        "lib/net7.0/RestSharp.xml",
+        "lib/net8.0/RestSharp.dll",
+        "lib/net8.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.112.1.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "SixLabors.ImageSharp/3.1.5": {
       "sha512": "lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
       "type": "package",
@@ -7925,6 +7963,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
+      "RestSharp >= 112.1.0",
       "SlugGenerator >= 2.0.2",
       "X.PagedList.Mvc.Core >= 10.5.7",
       "elFinder.NetCore >= 1.4.1"
@@ -7974,7 +8013,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -8001,6 +8040,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.7, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[112.1.0, )"
           },
           "SlugGenerator": {
             "target": "Package",
@@ -8034,7 +8077,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

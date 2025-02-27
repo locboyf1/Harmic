@@ -564,4 +564,11 @@ D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.DependencyInj
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\System.Text.Json.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\refs\System.Text.Json.dll
+D:\VisualStudio\UDWeb\Harmic\bin\Debug\net8.0\RestSharp.dll
+D:\VisualStudio\UDWeb\Harmic\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

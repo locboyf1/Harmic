@@ -16,6 +16,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="RestSharp" Version="112.1.0" />
     <PackageReference Include="SlugGenerator" Version="2.0.2" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="10.5.7" />
   </ItemGroup>
@@ -24,6 +25,7 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="wwwroot\assets\images\blog\medium-size\" />
     <Folder Include="wwwroot\assets\images\product\icon\" />
+    <Folder Include="wwwroot\files\Avatars\" />
   </ItemGroup>
 
   <ItemGroup>

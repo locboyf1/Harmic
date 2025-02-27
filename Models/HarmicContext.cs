@@ -21,6 +21,8 @@ public partial class HarmicContext : DbContext
 
     public virtual DbSet<TbBlogComment> TbBlogComments { get; set; }
 
+    public virtual DbSet<TbCart> TbCarts { get; set; }
+
     public virtual DbSet<TbCategory> TbCategories { get; set; }
 
     public virtual DbSet<TbContact> TbContacts { get; set; }
@@ -45,7 +47,9 @@ public partial class HarmicContext : DbContext
 
     public virtual DbSet<TbRole> TbRoles { get; set; }
 
-    public virtual DbSet<TbStaff> TbStaffs { get; set; }
+//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("data source=QUANGLOCPC\\QUANGLOC;initial catalog=Harmic;integrated security=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -111,6 +115,21 @@ public partial class HarmicContext : DbContext
             entity.HasOne(d => d.Blog).WithMany(p => p.TbBlogComments)
                 .HasForeignKey(d => d.BlogId)
                 .HasConstraintName("FK_tb_BlogComment_tb_Blog");
+        });
+
+        modelBuilder.Entity<TbCart>(entity =>
+        {
+            entity.HasKey(e => e.IdCart);
+
+            entity.ToTable("tb_Cart");
+
+            entity.HasOne(d => d.IdCustomerNavigation).WithMany(p => p.TbCarts)
+                .HasForeignKey(d => d.IdCustomer)
+                .HasConstraintName("FK_tb_Cart_tb_Customer");
+
+            entity.HasOne(d => d.IdProductNavigation).WithMany(p => p.TbCarts)
+                .HasForeignKey(d => d.IdProduct)
+                .HasConstraintName("FK_tb_Cart_tb_Product");
         });
 
         modelBuilder.Entity<TbCategory>(entity =>
@@ -305,23 +324,6 @@ public partial class HarmicContext : DbContext
 
             entity.Property(e => e.Description).HasMaxLength(50);
             entity.Property(e => e.RoleName).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<TbStaff>(entity =>
-        {
-            entity.HasKey(e => e.Idstaff);
-
-            entity.ToTable("TB_Staff");
-
-            entity.Property(e => e.Idstaff).HasColumnName("IDStaff");
-            entity.Property(e => e.Email)
-                .HasMaxLength(30)
-                .IsUnicode(false);
-            entity.Property(e => e.Idcard).HasColumnName("IDCard");
-            entity.Property(e => e.Name).HasMaxLength(30);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(11)
-                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

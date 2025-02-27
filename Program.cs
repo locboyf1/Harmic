@@ -1,7 +1,14 @@
 using Harmic.Models;
+using Harmic.Models.Momo;
+using Harmic.Services.Momo;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//connect to momo 
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

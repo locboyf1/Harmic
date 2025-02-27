@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q8q/hJ/pPNo=",
+  "dgSpecHash": "cLHVCtWjTl8=",
   "success": true,
   "projectFilePath": "D:\\VisualStudio\\UDWeb\\Harmic\\Harmic.csproj",
   "expectedPackageFiles": [
@@ -127,6 +127,7 @@
     "C:\\Users\\locbo\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\locbo\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\locbo\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\locbo\\.nuget\\packages\\restsharp\\112.1.0\\restsharp.112.1.0.nupkg.sha512",
     "C:\\Users\\locbo\\.nuget\\packages\\sixlabors.imagesharp\\3.1.5\\sixlabors.imagesharp.3.1.5.nupkg.sha512",
     "C:\\Users\\locbo\\.nuget\\packages\\sluggenerator\\2.0.2\\sluggenerator.2.0.2.nupkg.sha512",
     "C:\\Users\\locbo\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",

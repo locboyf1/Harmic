@@ -9,6 +9,12 @@ namespace Harmic.Utilities
         public static string _Email = string.Empty;
         public static string _Message = string.Empty;
         public static string _FullName = string.Empty;
+
+        //Customer
+        public static int _CustomerId = 0;
+        public static string _CustomerEmail = string.Empty;
+        public static string _CustomerMessage = string.Empty;
+        public static string _CustomerFullname = string.Empty;
         public static string MD5Hash(string text)
         {
             MD5 md5 = new MD5CryptoServiceProvider();
@@ -39,7 +45,13 @@ namespace Harmic.Utilities
 
         public static bool isLogin()
         {
-            if(string.IsNullOrEmpty(_Email)|| string.IsNullOrEmpty(_FullName) || _AccountId == 0) return false;
+            if (string.IsNullOrEmpty(_Email) || string.IsNullOrEmpty(_FullName) || _AccountId == 0) return false;
+            return true;
+        }
+
+        public static bool CustomerIsLogin()
+        {
+            if (string.IsNullOrEmpty(_CustomerEmail) || string.IsNullOrEmpty(_CustomerFullname) || _CustomerId == 0) return false;
             return true;
         }
     }

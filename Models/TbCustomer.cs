@@ -24,4 +24,6 @@ public partial class TbCustomer
     public DateTime? LastLogin { get; set; }
 
     public bool IsActive { get; set; }
+
+    public virtual ICollection<TbCart> TbCarts { get; set; } = new List<TbCart>();
 }

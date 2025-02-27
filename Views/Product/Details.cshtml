@@ -1,8 +1,6 @@
 ﻿@model TbProduct
 @{
-	List<TbProductReview> productReview = ViewBag.productReview;
 	List<TbProduct> productRelated = ViewBag.productRelated;
-	string productCategoriesTitle = ViewBag.categoryProductTitle;
 }
 
 <!-- Begin Main Content Area  -->
@@ -32,23 +30,23 @@
 						<div class="swiper-container single-product-slider">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<a href="~/assets/images/product/medium-size/2-1-555x645.jpg" class="single-img gallery-popup">
-										<img class="img-full" src="~@Model.Image" alt="Product Image">
+									<a href="~@Model.Image" class="single-img gallery-popup">
+										<img class="img-full" src="@Model.Image" alt="Product Image">
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="~/assets/images/product/medium-size/2-2-555x645.jpg" class="single-img gallery-popup">
-										<img class="img-full" src="~@Model.Image" alt="Product Image">
+									<a href="~@Model.Image" class="single-img gallery-popup">
+										<img class="img-full" src="@Model.Image" alt="Product Image">
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="~/assets/images/product/medium-size/2-3-555x645.jpg" class="single-img gallery-popup">
-										<img class="img-full" src="~@Model.Image" alt="Product Image">
+									<a href="~@Model.Image" class="single-img gallery-popup">
+										<img class="img-full" src="@Model.Image" alt="Product Image">
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="~/assets/images/product/medium-size/2-4-555x645.jpg" class="single-img gallery-popup">
-										<img class="img-full" src="~/files/products/@Model.Image" alt="Product Image">
+									<a href="~@Model.Image" class="single-img gallery-popup">
+										<img class="img-full" src="@Model.Image" alt="Product Image">
 									</a>
 								</div>
 							</div>
@@ -63,7 +61,7 @@
 							<div class="single-product-content">
 								<h2 class="title">@Model.Title</h2>
 								<div class="price-box pb-1">
-									@if (Model.PriceSale == 0)
+									@if (Model.PriceSale == 0)  
 									{
 										<span class="new-price text-primary">@Model.Price</span>
 									}
@@ -83,21 +81,26 @@
 										</ul>
 									</div>
 									<div class="review-status ps-4">
-										<a href="javascript:void(0)">( @productReview.Count() Customer Review )</a>
+										<a href="javascript:void(0)">( @Model.TbProductReviews.Count() Customer Review )</a>
 									</div>
 								</div>
 								<p class="short-desc mb-6">
 									@Model.Description
 								</p>
 								<ul class="quantity-with-btn pb-7">
+									<form asp-action="addCart" method="post">
+
 									<li class="quantity">
 										<div class="cart-plus-minus">
-											<input class="cart-plus-minus-box" value="1" type="text">
+											<input name="Quantity" class="cart-plus-minus-box" value="1" type="text">
+											<input type="number" name="id" value="@Model.ProductId" hidden />
+											<input type="text" name="alias" value="@Model.Alias" hidden />
 										</div>
 									</li>
 									<li class="add-to-cart">
-										<a class="btn btn-custom-size lg-size btn-primary btn-secondary-hover rounded-0" href="cart.html">Add to cart</a>
+										<button class="btn btn-custom-size lg-size btn-primary btn-secondary-hover rounded-0" asp-action="addCart" type="submit" >Add to cart</button>
 									</li>
+									</form>
 									<li class="wishlist-btn-wrap">
 										<a class="btn rounded-0" href="wishlist.html">
 											<i class="pe-7s-like"></i>
@@ -108,7 +111,7 @@
 									<span class="title">Categories :</span>
 									<ul>
 										<li>
-											<a href="javascript:void(0)">@productCategoriesTitle</a>
+											<a href="javascript:void(0)">@Model.CategoryProduct.Title</a>
 										</li>
 									</ul>
 								</div>
@@ -209,7 +212,7 @@
 							<div class="product-review-body">
 								<h4 class="heading mb-5">@Model.TbProductReviews.Count() Review Items</h4>
 								<ul class="user-info-wrap">
-									@foreach (var item in productReview)
+									@foreach (var item in Model.TbProductReviews)
 									{
 										<li>
 											<ul class="user-info">
@@ -319,7 +322,7 @@
 										<div class="product-item">
 											<div class="product-img img-zoom-effect">
 												<a href="@sURL">
-													<img class="img-full" src="~/assets/images/product/medium-size/@i.Image" alt="Product Images">
+													<img class="img-full" src="@i.Image" alt="Product Images">
 												</a>
 												<div class="product-add-action">
 													<ul>

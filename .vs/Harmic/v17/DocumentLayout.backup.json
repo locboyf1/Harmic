@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\VisualStudio\\UDWeb\\Harmic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\areas\\admin\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:areas\\admin\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|d:\\visualstudio\\udweb\\harmic\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8AA1A8-FFA3-4BBA-9B41-AF6531650D41}|Harmic.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -61,68 +41,32 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAANkAAAAAAAAAAAAAAOQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T13:43:08.006Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T13:43:03.045Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Register\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Register\\Index.cshtml",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Views\\Register\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Register\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T13:34:00.434Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwCUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:24:05.821Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\UDWeb\\Harmic\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\VisualStudio\\UDWeb\\Harmic\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:15:48.373Z",
+              "WhenOpened": "2025-01-23T09:22:53.887Z",
               "EditorCaption": ""
             }
           ]
