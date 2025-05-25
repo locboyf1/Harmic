@@ -58,6 +58,7 @@ namespace Harmic.Services.Momo
             request.AddParameter("application/json", JsonConvert.SerializeObject(requestData), ParameterType.RequestBody);
 
             var response = await client.ExecuteAsync(request);
+            Console.WriteLine(response.Content); // hoặc log ra file
             var momoResponse = JsonConvert.DeserializeObject<MomoCreatePaymentResponseModel>(response.Content);
             return momoResponse;
 

@@ -1,7 +1,8 @@
 ﻿
 <form method="POST" asp-action="CreatePaymentUrl" asp-controller="Payment">
 	<input type="hidden" name="FullName" value="abc" />
-	<input type="hidden" name="Amount" value="abc" />
+	<input type="hidden" name="Amount" value="10000" />
+	<input type="hidden" name="OrderId" value="@Guid.NewGuid().ToString()" />
 
 	<input type="hidden" name="OrderInfo" value="Thanh toán đặt hàng qua Momo tại HieuTanStore" />
 

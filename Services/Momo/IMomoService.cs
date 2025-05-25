@@ -6,6 +6,5 @@ namespace Harmic.Services.Momo
     {
         Task<MomoCreatePaymentResponseModel> CreatePaymentMomo(OrderInfoModel model);
         MomoExecuteResponseModel PaymentExecuteAsync(IQueryCollection collection);
-
     }
-}
+} 

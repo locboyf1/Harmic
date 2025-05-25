@@ -9,15 +9,20 @@ namespace Harmic.Controllers
 
         private IMomoService _momoService;
 
-        public PaymentController (IMomoService momoService)
+        public PaymentController(IMomoService momoService)
         {
             _momoService = momoService;
         }
         [HttpPost]
-        public async  Task<IActionResult> CreatePaymentUrl(OrderInfoModel model)
+        public async Task<IActionResult> CreatePaymentUrl(OrderInfoModel model)
         {
             var response = await _momoService.CreatePaymentMomo(model);
             return Redirect(response.PayUrl);
+        }
+
+        public IActionResult PaymentCallBack() {
+            var response = _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
+            return View(response);
         }
     }
 }
