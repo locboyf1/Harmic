@@ -13,7 +13,8 @@
 					<div class="product-add-action">
 						<ul>
 							<li>
-								<a href="cart.html">
+								<a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId">
+
 									<i class="pe-7s-cart"></i>
 								</a>
 							</li>
@@ -70,7 +71,7 @@ else
 					<div class="product-add-action">
 						<ul>
 							<li>
-								<a href="cart.html">
+								<a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId">
 									<i class="pe-7s-cart"></i>
 								</a>
 							</li>

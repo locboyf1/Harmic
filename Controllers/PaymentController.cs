@@ -14,7 +14,7 @@ namespace Harmic.Controllers
             _momoService = momoService;
         }
         [HttpPost]
-        public async Task<IActionResult> CreatePaymentUrl(OrderInfoModel model)
+        public async Task<IActionResult> PaymentMomo(OrderInfoModel model)
         {
             var response = await _momoService.CreatePaymentMomo(model);
             return Redirect(response.PayUrl);
