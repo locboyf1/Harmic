@@ -23,11 +23,9 @@ public partial class TbOrder
 
     public DateTime? CreatedDate { get; set; }
 
-    public string? CreatedBy { get; set; }
+    public int? CustomerId { get; set; }
 
-    public DateTime? ModifiedDate { get; set; }
-
-    public string? ModifiedBy { get; set; }
+    public virtual TbCustomer? Customer { get; set; }
 
     public virtual TbOrderStatus? OrderStatus { get; set; }
 

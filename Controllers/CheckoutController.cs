@@ -39,7 +39,6 @@ namespace Harmic.Controllers
                 _context.TbCheckouts.Add(newOder);
                 await _context.SaveChangesAsync();
 
-
             }
             else
             {
