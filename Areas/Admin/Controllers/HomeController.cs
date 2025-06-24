@@ -1,5 +1,6 @@
 ﻿using Harmic.Utilities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity;
 
 namespace Harmic.Areas.Admin.Controllers
 {
@@ -8,20 +9,19 @@ namespace Harmic.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
-            if (Function.isLogin())
+            if (!Function.isLogin())
             {
-                return View();
+                Function._Message = "Bạn cần phải đăng nhập";
+                return Redirect("/Login");
             }
-            return RedirectToAction("Index", "Login");
+            else if (Function._RoleId == 1)
+            {
+                Function._Message = "Bạn không có quyền truy cập vào trang này";
+                return Redirect("/Login");
+            }
+
+            return View();
         }
 
-        public IActionResult Logout()
-        {
-            Function._FullName = string.Empty;
-            Function._Message = string.Empty;
-            Function._Email = string.Empty;
-            Function._AccountId = 0;
-            return RedirectToAction("Index", "Login");
-        }
     }
 }

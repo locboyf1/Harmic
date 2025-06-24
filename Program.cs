@@ -1,7 +1,10 @@
-using Harmic.Models;
+﻿using Harmic.Models;
 using Harmic.Models.Momo;
 using Harmic.Services.Momo;
 using Microsoft.EntityFrameworkCore;
+using MySql.EntityFrameworkCore.Extensions;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +19,7 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<HarmicContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 

@@ -1,6 +1,6 @@
 ﻿@{
 
-	List<TbProductCategory> productCategories = ViewBag.productCategories;
+	List<TbProductcategory> productCategories = ViewBag.productCategories;
 	List<TbProduct> productNew = ViewBag.productNew;
 
 }
@@ -161,7 +161,7 @@
 						<li class="nav-item" role="presentation">
 							<a id="@item.Alias-tab" data-bs-toggle="tab" href="#@item.Alias" role="tab" aria-controls="@item.Alias" aria-selected="false" >
 								<div class="product-tab-icon">
-									<img src="/files/CategoryProduct/@item.Icon" alt="Product Icon">
+									<img src="@item.Icon" alt="@item.Title">
 								</div>
 								@item.Title
 							</a>

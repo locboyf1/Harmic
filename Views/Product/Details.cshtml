@@ -81,7 +81,7 @@
 										</ul>
 									</div>
 									<div class="review-status ps-4">
-										<a href="javascript:void(0)">( @Model.TbProductReviews.Count() Customer Review )</a>
+										<a href="javascript:void(0)">( @Model.TbProductreviews.Count() Customer Review )</a>
 									</div>
 								</div>
 								<p class="short-desc mb-6">
@@ -210,9 +210,9 @@
 						</div>
 						<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
 							<div class="product-review-body">
-								<h4 class="heading mb-5">@Model.TbProductReviews.Count() Review Items</h4>
+								<h4 class="heading mb-5">@Model.TbProductreviews.Count() Review Items</h4>
 								<ul class="user-info-wrap">
-									@foreach (var item in Model.TbProductReviews)
+									@foreach (var item in Model.TbProductreviews)
 									{
 										<li>
 											<ul class="user-info">

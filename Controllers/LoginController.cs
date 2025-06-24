@@ -14,34 +14,55 @@ namespace Harmic.Controllers
         }
         public IActionResult Index()
         {
+            if (Function.isLogin())
+            {
+                Function._Message = "Bạn đã đăng nhập rồi";
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult Index(TbCustomer customer)
         {
-
             if (customer == null)
             {
                 return NotFound();
             }
-            if (string.IsNullOrEmpty(customer.Email) || string.IsNullOrEmpty(customer.Password)) {
-                Function._CustomerMessage = "Vui lòng nhập đủ các trường";
+            if (string.IsNullOrEmpty(customer.Email) || string.IsNullOrEmpty(customer.Password))
+            {
+                Function._Message = "Vui lòng nhập đủ các trường";
                 return View();
             }
             string password = Function.md5password(customer.Password);
-            var check = _context.TbCustomers.Where(i=>(i.Email == customer.Email) &&(i.Password == password)).FirstOrDefault();
-            if(check == null)
+            var check = _context.TbCustomers.Where(i => (i.Email == customer.Email) && (i.Password == password)).FirstOrDefault();
+            if (check == null)
             {
-                Function._CustomerMessage = "Sai thông tin đăng nhập";
-                return View(); 
+                Function._Message = "Sai thông tin đăng nhập";
+                return View();
             }
-            Function._CustomerId = check.CustomerId;
-            Function._CustomerFullname = check.Username;
-            Function._CustomerMessage = string.Empty;
-            Function._CustomerEmail = check.Email;
+            check.LastLogin = DateTime.Now;
+            _context.Update(check);
+            _context.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            Function._AccountId = check.CustomerId;
+            Function._FullName = check.Username;
+            Function._Message = string.Empty;
+            Function._Email = check.Email;
+            Function._RoleId = check.RoleId;
+
+            if (string.IsNullOrEmpty(Function._ReturnUrl))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                string url = Function._ReturnUrl;
+                Function._ReturnUrl = string.Empty;
+
+                return Redirect(url);
+            }
+
         }
 
 

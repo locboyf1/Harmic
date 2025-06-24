@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Harmic.Models;
 
-public partial class TbBlogComment
+public partial class TbBlogcomment
 {
     public int CommentId { get; set; }
 

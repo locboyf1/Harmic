@@ -43,9 +43,11 @@ public partial class TbProduct
 
     public int? Star { get; set; }
 
-    public virtual TbProductCategory? CategoryProduct { get; set; }
+    public virtual TbProductcategory? CategoryProduct { get; set; }
 
     public virtual ICollection<TbCart> TbCarts { get; set; } = new List<TbCart>();
 
-    public virtual ICollection<TbProductReview> TbProductReviews { get; set; } = new List<TbProductReview>();
+    public virtual ICollection<TbProductreview> TbProductreviews { get; set; } = new List<TbProductreview>();
+
+    public virtual ICollection<TbWishlish> TbWishlishes { get; set; } = new List<TbWishlish>();
 }

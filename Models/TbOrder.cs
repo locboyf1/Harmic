@@ -27,7 +27,7 @@ public partial class TbOrder
 
     public virtual TbCustomer? Customer { get; set; }
 
-    public virtual TbOrderStatus? OrderStatus { get; set; }
+    public virtual TbOrderstatus? OrderStatus { get; set; }
 
-    public virtual ICollection<TbOrderDetail> TbOrderDetails { get; set; } = new List<TbOrderDetail>();
+    public virtual ICollection<TbOrderdetail> TbOrderdetails { get; set; } = new List<TbOrderdetail>();
 }

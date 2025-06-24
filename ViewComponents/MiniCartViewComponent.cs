@@ -16,7 +16,7 @@ namespace Harmic.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-             var minicart =  _context.TbCarts.Include(i=>i.IdProductNavigation).Where(i=>i.IdCustomer == Function._CustomerId).ToList();
+             var minicart =  _context.TbCarts.Include(i=>i.IdProductNavigation).Where(i=>i.IdCustomer == Function._AccountId).ToList();
 
             return await Task.FromResult<IViewComponentResult>(View(minicart));
         }

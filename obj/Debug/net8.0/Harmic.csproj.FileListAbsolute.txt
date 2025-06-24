@@ -1145,3 +1145,16 @@ C:\Users\locbo\Tài liệu\Harmic\Harmic\obj\Debug\net8.0\refint\Harmic.dll
 C:\Users\locbo\Tài liệu\Harmic\Harmic\obj\Debug\net8.0\Harmic.pdb
 C:\Users\locbo\Tài liệu\Harmic\Harmic\obj\Debug\net8.0\Harmic.genruntimeconfig.cache
 C:\Users\locbo\Tài liệu\Harmic\Harmic\obj\Debug\net8.0\ref\Harmic.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\Ubiety.Dns.Core.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\Zstandard.Net.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\MySql.Data.EntityFrameworkCore.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\Renci.SshNet.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\SshNet.Security.Cryptography.dll
+C:\Users\locbo\Tài liệu\Harmic\Harmic\bin\Debug\net8.0\System.Xml.XPath.XmlDocument.dll

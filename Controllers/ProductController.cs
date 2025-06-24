@@ -29,7 +29,7 @@ namespace Harmic.Controllers
             TbCart miniCart = new TbCart();
             miniCart.IdProduct = id;
             miniCart.Quantity = Quantity;
-            miniCart.IdCustomer = Function._CustomerId;
+            miniCart.IdCustomer = Function._AccountId;
             _context.Add(miniCart);
             _context.SaveChanges();
             string url = $"/product/{alias}-{id}.html";
@@ -44,12 +44,12 @@ namespace Harmic.Controllers
             {
                 return NotFound();
             }
-            var product = await _context.TbProducts.Include(i=>i.TbProductReviews).Include(i => i.CategoryProduct).FirstOrDefaultAsync(m => m.ProductId == id);
+            var product = await _context.TbProducts.Include(i=>i.TbProductreviews).Include(i => i.CategoryProduct).FirstOrDefaultAsync(m => m.ProductId == id);
             if (product == null)
             {
                 return NotFound();
             }
-            ViewBag.productReview = _context.TbProductReviews.Where(i => i.ProductId == id && i.IsActive).ToList();
+            ViewBag.productReview = _context.TbProductreviews.Where(i => i.ProductId == id && i.IsActive).ToList();
             ViewBag.productRelated = _context.TbProducts.Where(i => i.ProductId != id && i.CategoryProductId == product.CategoryProductId).Take(5).OrderByDescending(i => i.ProductId).ToList();
             return View(product);
         }

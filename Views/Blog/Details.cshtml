@@ -33,7 +33,7 @@
 									<li class="date"><i class="fa fa-calendar-o me-2"></i>@Model.CreatedDate.Value.ToString("dd/MM/yyyy")</li>
 									<li>
 										<span class="comments me-3">
-											<a href="javascript:void(0)">@Model.TbBlogComments.Count() Comments</a>
+											<a href="javascript:void(0)">@Model.TbBlogcomments.Count() Comments</a>
 										</span>
 										<span class="link-share">
 											<a href="javascript:void(0)">Share</a>
@@ -82,8 +82,8 @@
 								</div>
 							</div>
 							<div class="blog-comment pt-10">
-								<h4 class="heading mb-7">@Model.TbBlogComments.Count() Comments</h4>
-								@foreach (var item in Model.TbBlogComments)
+								<h4 class="heading mb-7">@Model.TbBlogcomments.Count() Comments</h4>
+								@foreach (var item in Model.TbBlogcomments)
 								{
 									<div class="blog-comment-item mb-8">
 										<div class="blog-comment-img">
@@ -109,7 +109,7 @@
 							</div>
 							<div class="feedback-area section-space-top-55">
 								<h4 class="heading mb-1">Leave a comment</h4>
-								@if (Function.CustomerIsLogin())
+								@if (Function.isLogin())
 								{
 									<form class="feedback-form pt-8" asp-action="Comment">
 										<input name="BlogId" value="@Model.BlogId" hidden />

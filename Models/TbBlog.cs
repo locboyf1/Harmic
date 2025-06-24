@@ -41,5 +41,5 @@ public partial class TbBlog
 
     public virtual TbCategory? Category { get; set; }
 
-    public virtual ICollection<TbBlogComment> TbBlogComments { get; set; } = new List<TbBlogComment>();
+    public virtual ICollection<TbBlogcomment> TbBlogcomments { get; set; } = new List<TbBlogcomment>();
 }

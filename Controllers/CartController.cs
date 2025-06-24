@@ -16,12 +16,12 @@ namespace Harmic.Controllers
 
         public IActionResult Index()
         {
-            if (!Function.CustomerIsLogin())
+            if (!Function.isLogin())
             {
 
                 return RedirectToAction("Index", "Login");
             }
-            var cartItems = _context.TbCarts.Where(c => c.IdCustomer == Function._CustomerId).Include(i => i.IdProductNavigation).ToList();
+            var cartItems = _context.TbCarts.Where(c => c.IdCustomer == Function._AccountId).Include(i => i.IdProductNavigation).ToList();
 
             int TotalPrice = 0;
             foreach (var item in cartItems)
@@ -45,11 +45,11 @@ namespace Harmic.Controllers
 
         public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
         {
-            if (!Function.CustomerIsLogin())
+            if (!Function.isLogin())
             {
                 return await Task.FromResult<IActionResult>(RedirectToAction("Index", "Login"));
             }
-            var existingCartItem = _context.TbCarts.FirstOrDefault(c => c.IdProduct == productId && c.IdCustomer == Function._CustomerId);
+            var existingCartItem = _context.TbCarts.FirstOrDefault(c => c.IdProduct == productId && c.IdCustomer == Function._AccountId);
             if (existingCartItem != null)
             {
                 existingCartItem.Quantity += quantity;
@@ -60,7 +60,7 @@ namespace Harmic.Controllers
                 var newCartItem = new TbCart
                 {
                     IdProduct = productId,
-                    IdCustomer = Function._CustomerId,
+                    IdCustomer = Function._AccountId,
                     Quantity = quantity
                 };
                 _context.TbCarts.Add(newCartItem);
@@ -71,12 +71,12 @@ namespace Harmic.Controllers
 
         public async Task<IActionResult> RemoveFromCart(int cartId)
         {
-            if (!Function.CustomerIsLogin())
+            if (!Function.isLogin())
             {
                 return await Task.FromResult<IActionResult>(RedirectToAction("Index", "Login"));
             }
             var cartItem = await _context.TbCarts.FindAsync(cartId);
-            if (cartItem != null && cartItem.IdCustomer == Function._CustomerId)
+            if (cartItem != null && cartItem.IdCustomer == Function._AccountId)
             {
                 _context.TbCarts.Remove(cartItem);
                 await _context.SaveChangesAsync();
@@ -87,12 +87,12 @@ namespace Harmic.Controllers
 
         public async Task<IActionResult> ChangeQuantity(int cartId, int quantity)
         {
-            if (!Function.CustomerIsLogin())
+            if (!Function.isLogin())
             {
                 return await Task.FromResult<IActionResult>(RedirectToAction("Index", "Login"));
             }
             var cartItem = await _context.TbCarts.FindAsync(cartId);
-            if (cartItem != null && cartItem.IdCustomer == Function._CustomerId)
+            if (cartItem != null && cartItem.IdCustomer == Function._AccountId)
             {
                 cartItem.Quantity = quantity;
                 _context.Update(cartItem);

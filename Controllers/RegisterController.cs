@@ -22,18 +22,18 @@ namespace Harmic.Controllers
         public IActionResult Index(TbCustomer customer, string ConfirmPassword) { 
             if(string.IsNullOrEmpty(customer.Username) || string.IsNullOrEmpty(customer.Email) || string.IsNullOrEmpty(customer.Password) || string.IsNullOrEmpty(ConfirmPassword))
             {
-                Function._CustomerMessage = "Vui lòng nhập đủ các trường";
+                Function._Message = "Vui lòng nhập đủ các trường";
                 return View();
             }
            var check = _context.TbCustomers.FirstOrDefault(i=>i.Email == customer.Email);
             if (check != null)
             {
-                Function._CustomerMessage = "Email đã được đăng ký";
+                Function._Message = "Email đã được đăng ký";
                 return View();
             }
             if(ConfirmPassword != customer.Password)
             {
-                Function._CustomerMessage = "Mật khẩu và mật khẩu nhập lại phải khác nhau";
+                Function._Message = "Mật khẩu và mật khẩu nhập lại phải khác nhau";
                 return View();
             }
             TbCustomer tbCustomer = new TbCustomer();
@@ -42,7 +42,8 @@ namespace Harmic.Controllers
             tbCustomer.IsActive = true;
             tbCustomer.Password = Function.md5password(customer.Password);
             tbCustomer.Username = customer.Username;
-            Function._CustomerMessage = string.Empty;
+            tbCustomer.RoleId = 1;
+            Function._Message = string.Empty;
 
             _context.Add(tbCustomer);
             _context.SaveChanges();

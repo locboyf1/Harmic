@@ -43,11 +43,11 @@ namespace Harmic.Areas.Admin.Controllers
                 Function._Message = "Phải chấp nhận điều khoản";
                 return RedirectToAction("Index", "Register");
             }
-            Function._Message = string.Empty;
+            Function._Message = "Đăng ký thành công!";
             account.Password = Function.md5password(account.Password);
             _context.TbAccounts.Add(account);
             _context.SaveChanges();
-
+           
             return RedirectToAction("Index", "Login");
         }
     }

@@ -46,7 +46,7 @@ namespace Harmic.Controllers
                 return RedirectToAction("Index", "Cart");
             }
 
-            var cartItems = _context.TbCarts.Where(c => c.IdCustomer == Function._CustomerId).ToList();
+            var cartItems = _context.TbCarts.Where(c => c.IdCustomer == Function._AccountId).ToList();
             _context.TbCarts.RemoveRange(cartItems);
             await _context.SaveChangesAsync();
             Function._Message = "Thanh toán thành công";

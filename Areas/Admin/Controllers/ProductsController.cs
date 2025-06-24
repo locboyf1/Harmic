@@ -60,7 +60,7 @@ namespace Harmic.Areas.Admin.Controllers
         {
             if (Function.isLogin())
             {
-                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "Title");
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductcategories, "CategoryProductId", "Title");
                 return View();
             }
             return RedirectToAction("Index", "Login");
@@ -75,6 +75,8 @@ namespace Harmic.Areas.Admin.Controllers
         {
             if (Function.isLogin())
             {
+                tbProduct.CreatedDate = DateTime.Now;
+                tbProduct.CreatedBy = Function._FullName;
                 if (ModelState.IsValid)
                 {
                     tbProduct.Alias = Harmic.Utilities.Function.TitleToAlias(tbProduct.Title);
@@ -82,7 +84,7 @@ namespace Harmic.Areas.Admin.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
-                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductcategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
                 return View(tbProduct);
             }
             return RedirectToAction("Index", "Login");
@@ -104,7 +106,7 @@ namespace Harmic.Areas.Admin.Controllers
                 {
                     return NotFound();
                 }
-                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductcategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
                 return View(tbProduct);
             }
             return RedirectToAction("Index", "Login");
@@ -144,7 +146,7 @@ namespace Harmic.Areas.Admin.Controllers
                     }
                     return RedirectToAction(nameof(Index));
                 }
-                ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+                ViewData["CategoryProductId"] = new SelectList(_context.TbProductcategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
                 return View(tbProduct);
             }
             return RedirectToAction("Index", "Login");

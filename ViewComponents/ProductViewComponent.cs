@@ -15,7 +15,7 @@ namespace Harmic.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var items = _context.TbProducts.Include(m => m.CategoryProduct).Where(m => (bool)m.IsActive).Where(m => m.IsNew);
+            var items = _context.TbProducts.Include(m => m.CategoryProduct).Where(m => (bool)m.IsActive).Where(m => m.IsNew).Include(i=>i.TbWishlishes);
             return await Task.FromResult<IViewComponentResult>(View(items.OrderByDescending(m => m.ProductId).ToList()));
         }
     }

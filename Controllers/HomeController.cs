@@ -17,9 +17,9 @@ namespace Harmic.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.productCategories = _context.TbProductCategories.ToList();
+            ViewBag.productCategories = _context.TbProductcategories.ToList();
             ViewBag.productNew = _context.TbProducts.Where(m => m.IsNew).ToList();
-            ViewBag.commentBlogs = _context.TbBlogComments.ToList();
+            ViewBag.commentBlogs = _context.TbBlogcomments.ToList();
 
             return View();
         }

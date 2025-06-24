@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Harmic.Models;
 
-public partial class TbOrderDetail
+public partial class TbOrderdetail
 {
     public int OrderDetailId { get; set; }
 

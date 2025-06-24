@@ -25,7 +25,13 @@ public partial class TbCustomer
 
     public bool IsActive { get; set; }
 
+    public int RoleId { get; set; }
+
+    public virtual TbRole Role { get; set; } = null!;
+
     public virtual ICollection<TbCart> TbCarts { get; set; } = new List<TbCart>();
 
     public virtual ICollection<TbOrder> TbOrders { get; set; } = new List<TbOrder>();
+
+    public virtual ICollection<TbWishlish> TbWishlishes { get; set; } = new List<TbWishlish>();
 }
