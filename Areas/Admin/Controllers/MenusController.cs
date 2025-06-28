@@ -71,16 +71,20 @@ namespace Harmic.Areas.Admin.Controllers
         {
             if (Function.isLogin())
             {
+
+                tbMenu.CreatedDate = DateTime.Now;
+                tbMenu.CreatedBy = Function._FullName;
+                tbMenu.Position = _context.TbMenus.Any() ? _context.TbMenus.Max(x => x.Position) + 1 : 1;
+
                 if (ModelState.IsValid)
                 {
-                    tbMenu.Alias = Harmic.Utilities.Function.TitleToAlias(tbMenu.Title);
                     _context.Add(tbMenu);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
                 return View(tbMenu);
             }
-            return RedirectToAction("Index", "Login");
+            return Redirect("/Login");
 
         }
 
@@ -93,6 +97,9 @@ namespace Harmic.Areas.Admin.Controllers
                 {
                     return NotFound();
                 }
+
+                ViewData["Menus"] = new SelectList(_context.TbMenus, "MenuId", "Title");
+
 
                 var tbMenu = await _context.TbMenus.FindAsync(id);
                 if (tbMenu == null)
@@ -110,7 +117,7 @@ namespace Harmic.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
+        public async Task<IActionResult> Edit(int id, [Bind("MenuId,Title,Alias,Description,Levels,ParentId,IsActive")] TbMenu tbMenu)
         {
             if (Function.isLogin())
             {
@@ -119,6 +126,9 @@ namespace Harmic.Areas.Admin.Controllers
                     return NotFound();
                 }
 
+                tbMenu.ModifiedDate = DateTime.Now;
+                tbMenu.ModifiedBy = Function._FullName;
+            
                 if (ModelState.IsValid)
                 {
                     try

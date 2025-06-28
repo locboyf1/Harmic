@@ -38,38 +38,35 @@
 						</div>
 						<!-- /.card-header -->
 						<!-- form start -->
-						<form asp-action="Edit">
-							<input type="hidden" asp-for="MenuId" >
+						<form asp-action="Edit" method="post">
+							<input type="hidden" asp-for="MenuId">
 							<div class="card-body">
 								<div class="form-group">
 									<label asp-for="Title" class="control-label">Tiêu đề</label>
-									<input asp-for="Title" class="form-control">
+									<input asp-for="Title" class="form-control" />
 									<span asp-validation-for="Title" class="text-danger"></span>
 								</div>
 								<div class="form-group">
 									<label asp-for="Alias" class="control-label">Alias</label>
-									<input asp-for="Alias" class="form-control">
+									<input asp-for="Alias" class="form-control" />
 									<span asp-validation-for="Alias" class="text-danger"></span>
 								</div>
 								<div class="form-group">
 									<label asp-for="Description" class="control-label">Mô tả</label>
-									<input asp-for="Description" class="form-control">
+									<input asp-for="Description" class="form-control" />
 									<span asp-validation-for="Description" class="text-danger"></span>
 								</div>
 								<div class="form-group">
 									<label asp-for="Levels" class="control-label">Mức</label>
-									<input asp-for="Levels" class="form-control">
+									<input asp-for="Levels" class="form-control" />
 									<span asp-validation-for="Levels" class="text-danger"></span>
 								</div>
+
 								<div class="form-group">
 									<label asp-for="ParentId" class="control-label">Menu cha</label>
-									<input asp-for="ParentId" class="form-control">
-									<span asp-validation-for="ParentId" class="text-danger"></span>
-								</div>
-								<div class="form-group">
-									<label asp-for="Position" class="control-label">Vị trí</label>
-									<input asp-for="Position" class="form-control">
-									<span asp-validation-for="Position" class="text-danger"></span>
+									<select asp-for="ParentId" class="form-control" asp-items="ViewBag.Menus">
+										<option value="0" selected>--[Không chọn]--</option>
+									</select>
 								</div>
 
 								<div class="form-check form-group">
@@ -81,7 +78,7 @@
 							<!-- /.card-body -->
 
 							<div class="card-footer">
-								<button type="submit" class="btn btn-primary">Sửa</button>
+								<button type="submit" class="btn btn-primary">Lưu</button>
 							</div>
 						</form>
 					</div>

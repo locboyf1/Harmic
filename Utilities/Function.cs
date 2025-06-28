@@ -36,10 +36,6 @@ namespace Harmic.Utilities
             }
             return str;
         }
-        public static string TitleToAlias(string title)
-        {
-            return SlugGenerator.SlugGenerator.GenerateSlug(title);
-        }
 
         public static bool isLogin()
         {

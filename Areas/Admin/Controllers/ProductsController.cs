@@ -79,7 +79,6 @@ namespace Harmic.Areas.Admin.Controllers
                 tbProduct.CreatedBy = Function._FullName;
                 if (ModelState.IsValid)
                 {
-                    tbProduct.Alias = Harmic.Utilities.Function.TitleToAlias(tbProduct.Title);
                     _context.Add(tbProduct);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));

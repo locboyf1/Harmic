@@ -24,6 +24,10 @@ namespace Harmic.Areas.Admin.Controllers
         // GET: Admin/Productcategories
         public async Task<IActionResult> Index()
         {
+            if (!Function.isLogin()){
+                Function._ReturnUrl = "/Admin/Productcategories";
+                return Redirect("/Login");
+            }
             return View(await _context.TbProductcategories.Include(i => i.TbProducts).OrderBy(i => i.Position).ToListAsync());
         }
 
@@ -136,15 +140,20 @@ namespace Harmic.Areas.Admin.Controllers
 
             if (category.Position > 1)
             {
+                var previousCategory = await _context.TbProductcategories
+                    .Where(i => i.Position == category.Position - 1)
+                    .FirstOrDefaultAsync();
                 category.Position -= 1;
-            }
-            _context.Update(category);
-            await _context.SaveChangesAsync();
+                if (previousCategory != null)
+                {
+                    previousCategory.Position += 1;
+                    _context.Update(previousCategory);
+                }
+                _context.Update(category);
+                await _context.SaveChangesAsync();
 
-            await _context.TbProductcategories
-                .Where(i => i.Position >= category.Position && i.CategoryProductId != category.CategoryProductId)
-                    .UpdateAsync(i => new TbProductcategory { Position = i.Position + 1 });
-            _context.SaveChanges();
+            }
+
             return RedirectToAction("Index");
         }
 
@@ -160,15 +169,18 @@ namespace Harmic.Areas.Admin.Controllers
 
             if (category.Position < _context.TbProductcategories.Max(i => i.Position))
             {
+                var nextCategory = await _context.TbProductcategories
+                    .Where(i => i.Position == category.Position + 1)
+                    .FirstOrDefaultAsync();
                 category.Position += 1;
+                if (nextCategory != null)
+                {
+                    nextCategory.Position -= 1;
+                    _context.Update(nextCategory);
+                }
+                _context.Update(category);
+                await _context.SaveChangesAsync();
             }
-            _context.Update(category);
-            await _context.SaveChangesAsync();
-
-            await _context.TbProductcategories
-                .Where(i => i.Position >= category.Position && i.CategoryProductId != category.CategoryProductId)
-                    .UpdateAsync(i => new TbProductcategory { Position = i.Position - 1 });
-
             return RedirectToAction("Index");
         }
 

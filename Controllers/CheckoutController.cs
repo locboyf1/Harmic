@@ -25,7 +25,8 @@ namespace Harmic.Controllers
         {
             var respone = _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
             var RequestQuery = HttpContext.Request.Query;
-            if (RequestQuery["resultCode"] != 0)
+            
+            if (RequestQuery["resultCode"] == 0)
             {
                 var newOder = new TbCheckout
                 {
@@ -42,7 +43,8 @@ namespace Harmic.Controllers
             }
             else
             {
-                Function._Message = "Thanh toán thất bại";
+                Function._Message = $"Thanh toán thất bại, mã lỗi {RequestQuery["resultCode"]}";
+                ViewBag.Error = RequestQuery["message"];
                 return RedirectToAction("Index", "Cart");
             }
 
